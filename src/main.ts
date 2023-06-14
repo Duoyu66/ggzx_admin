@@ -8,6 +8,9 @@ import 'element-plus/dist/index.css'
 import 'virtual:svg-icons-register'
 import SvgIcon from './components/SvgIcon/index.vue'
 
+//引入路由
+import router from './router/index.ts'
+app.use(router)
 //引入scss
 import './styles/index.scss'
 //引入自定义插件对象：注册整个项目全局组件

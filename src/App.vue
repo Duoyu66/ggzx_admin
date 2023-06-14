@@ -3,21 +3,13 @@
 </script>
 
 <template>
-  <h1>我是App</h1>
-  <div class="kk">
-    <h1>测试代码</h1>
-  </div>
-  <!--  svg图标使用-->
-  <!--<svg style="width: 40px;height: 40px;">-->
-  <!--  <use xlink:href="#icon-phone" fill="blue"></use>-->
-  <!--</svg>-->
-  <SvgIcon name="home" color="pink" width="150" height="150"></SvgIcon>
+  <router-view></router-view>
+
 </template>
 
 <style scoped lang="scss">
-/*.kk{*/
-/*  h1{*/
-/*    color: red;*/
-/*  }*/
-//}
+html,body{
+  width: 100%!important;
+  height: 100%;
+}
 </style>
