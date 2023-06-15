@@ -4,7 +4,8 @@ export interface loginForm{
     password:string
 }
 interface dataType{
-    token:string
+    token:string,
+    message:string
 }
 //定义服务器返回信息相关的数据类型
 interface userInfo{

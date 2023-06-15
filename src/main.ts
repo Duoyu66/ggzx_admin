@@ -8,6 +8,9 @@ import 'element-plus/dist/index.css'
 import 'virtual:svg-icons-register'
 import SvgIcon from './components/SvgIcon/index.vue'
 
+//引入pinia
+import pinia from './store'
+app.use(pinia);
 //引入路由
 import router from './router/index.ts'
 app.use(router)
