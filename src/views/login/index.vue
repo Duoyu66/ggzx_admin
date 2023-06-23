@@ -2,6 +2,7 @@
 import {User, Lock} from '@element-plus/icons-vue'
 import {reactive, ref} from "vue";
 import {useRouter} from "vue-router";
+import {getTime} from "../../utils/time.ts";
 
 let $router = useRouter();
 let loginForm = reactive({
@@ -24,7 +25,8 @@ const login = async () => {
     //登录成功的提示信息
     ElNotification({
       type: 'success',
-      message: '登录成功'
+      message: '欢迎回来',
+      title:`Hi,${getTime()}好}`
     })
     //登录成功加载效果消失
     loading.value = false
@@ -39,6 +41,7 @@ const login = async () => {
   console.log("我是登录按钮")
 
 }
+
 </script>
 
 <template>
