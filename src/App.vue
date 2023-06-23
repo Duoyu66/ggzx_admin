@@ -8,8 +8,8 @@
 </template>
 
 <style scoped lang="scss">
-html,body{
-  width: 100%!important;
+html, body {
+  width: 100% !important;
   height: 100%;
 }
 </style>
